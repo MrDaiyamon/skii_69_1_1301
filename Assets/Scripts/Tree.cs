@@ -34,6 +34,8 @@ public class Tree : MonoBehaviour
         {
             player.HP = 0;
             UIManager.instance.ShowNotiText("YOU ARE DEAD");
+            Time.timeScale = 0f;
+            UIManager.instance.ShowHideRestartButton(true);
         }
     }
 
