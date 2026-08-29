@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Finish : MonoBehaviour
+public class Void : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +21,7 @@ public class Finish : MonoBehaviour
         if (p == null)
             return;
 
-        UIManager.instance.ShowNotiText($"YOU WIN!!!!!\nPoint : {p.Point}");
+        UIManager.instance.ShowNotiText($"YOU FALL TO VOID!!");
         Time.timeScale = 0f;
         UIManager.instance.ShowHideRestartButton(true);
     }
